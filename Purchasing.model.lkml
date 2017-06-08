@@ -4,6 +4,8 @@ case_sensitive: no
 include: "*.view.lkml"         # include all views in this project
 include: "*.dashboard.lookml"  # include all dashboards in this project
 
+label: "Information for Purchasing"
+
 explore: flights {
   label: "Inventory Items"
 
