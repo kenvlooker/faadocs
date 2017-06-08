@@ -13,6 +13,7 @@ explore: flights {
     type: left_outer
     relationship: many_to_one
     sql_on: ${flights.tail_num} = ${aircraft.tail_num} ;;
+    view_label: "Airplane Information"
   }
 
   join: carriers {
