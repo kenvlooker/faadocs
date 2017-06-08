@@ -5,7 +5,6 @@ include: "*.view.lkml"         # include all views in this project
 include: "*.dashboard.lookml"  # include all dashboards in this project
 
 explore: flights {
-  label: "Inventory Items"
 
   join: origin_airport {
     from: airports
