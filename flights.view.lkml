@@ -77,6 +77,7 @@ view: flights {
 
   dimension: id2 {
     type: number
+    hidden: yes
     sql: ${TABLE}.id2 ;;
   }
 
