@@ -7,6 +7,12 @@ view: flights {
     sql: ${TABLE}.arr_delay ;;
   }
 
+  dimension: arrival_delay_tier {
+    type: tier
+    tiers: [0, 15, 30, 60]
+    sql:  ${arr_delay} ;;
+  }
+
   dimension_group: arr {
     type: time
     timeframes: [
