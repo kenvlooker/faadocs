@@ -10,6 +10,7 @@ view: flights {
   dimension: arrival_delay_tier {
     type: tier
     tiers: [0, 15, 30, 60]
+    style: relational
     sql:  ${arr_delay} ;;
   }
 
