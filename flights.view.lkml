@@ -67,6 +67,20 @@ view: flights {
     sql: ${TABLE}.distance ;;
   }
 
+  dimension: distance_category {
+    case: {
+      when: {
+        sql: ${TABLE}.distance < 400 ;;
+        label: "short"
+      }
+      when: {
+        sql: ${TABLE}.distance > 400 AND ${TABLE}.distance < 1000 ;;
+        label: "medium"
+      }
+      else: "long"
+    }
+  }
+
   dimension: diverted {
     type: string
     sql: ${TABLE}.diverted ;;
