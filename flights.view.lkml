@@ -70,7 +70,7 @@ view: flights {
   dimension: distance_category {
     case: {
       when: {
-        sql: ${TABLE}.distance < 400 ;;
+        sql: ${TABLE}.distance <= 400 ;;
         label: "short"
       }
       when: {
