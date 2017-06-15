@@ -68,6 +68,7 @@ view: flights {
   }
 
   dimension: distance_category {
+    alpha_sort: yes
     case: {
       when: {
         sql: ${TABLE}.distance <= 400 ;;
