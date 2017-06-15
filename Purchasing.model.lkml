@@ -3,7 +3,7 @@ case_sensitive: no
 
 include: "*.view.lkml"         # include all views in this project
 include: "*.dashboard.lookml"  # include all dashboards in this project
-include: "/thelook/order_items.view.lkml"
+include: "/thelook/order_items.view.lkml" # include the view "order_items" from the project "thelook"
 
 label: "Information for Purchasing"
 

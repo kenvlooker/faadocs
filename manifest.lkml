@@ -6,7 +6,4 @@ project_name: "purchasing"
 # local_dependency: {
 #   project: "name_of_other_project"
 # }
-local_dependency: {
- project: "thelook"
-# project: "marketing"
-}
+local_dependency: { project: "thelook" }
