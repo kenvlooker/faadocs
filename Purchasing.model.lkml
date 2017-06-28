@@ -3,9 +3,8 @@ case_sensitive: no
 
 include: "*.view.lkml"         # include all views in this project
 include: "*.dashboard.lookml"  # include all dashboards in this project
-include: "/thelook/order_items.view.lkml" # include the view "order_items" from the project "thelook"
 
-label: "Information for Purchasing"
+label: "Purchasing"
 
 explore: flights {
   label: "Inventory Items"
@@ -24,6 +23,7 @@ explore: flights {
   }
 
   join: origin_airport {
+    view_label: "Origin Airport"
     from: airports
     type: left_outer
     relationship: many_to_one
@@ -31,6 +31,7 @@ explore: flights {
   }
 
   join: destination_airport {
+    view_label: "Destination Airport"
     from: airports
     type: left_outer
     relationship: many_to_one
